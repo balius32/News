@@ -34,6 +34,10 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    buildFeatures {
+        viewBinding =true
+    }
 }
 
 dependencies {
@@ -80,8 +84,10 @@ dependencies {
     implementation("com.squareup.okhttp3:logging-interceptor:4.5.0")
 
     // Navigation Components
-    implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
-    implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.4.1")
+    implementation("androidx.navigation:navigation-ui-ktx:2.4.1")
+
+
 
     // Glide
     implementation("com.github.bumptech.glide:glide:4.11.0")
